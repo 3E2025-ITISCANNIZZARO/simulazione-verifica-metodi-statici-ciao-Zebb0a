@@ -133,9 +133,10 @@ public class Main {
     public static String giornoSettimana(int giorno) {
         String risposta="lunedì,martedì,mercoledì,giovedì,venerdì,sabato,domenica";
         // TODO: SCRIVI QUI IL CODICE
-        
-        return risposta;
-    }
+            int indice = (giorno - 1) % 7;
+            
+            return giorniDellaSettimana[indice];
+        }
 
     /**
      * ESERCIZIO 6
